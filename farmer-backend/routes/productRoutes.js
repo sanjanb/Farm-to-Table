@@ -16,7 +16,7 @@ router.post("/", addProduct);
 // Get all products
 router.get("/", getProducts);
 
-// Get product by ID
+// Get a product by ID
 router.get("/:id", getProductById);
 
 // Update a product

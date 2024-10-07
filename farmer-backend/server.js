@@ -1,5 +1,3 @@
-// server.js
-
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -32,11 +30,6 @@ app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/transactions", transactionRoutes);
-
-// Sample route
-app.get("/", (req, res) => {
-  res.send("Welcome to the Farm to Table API");
-});
 
 // Start the server
 app.listen(PORT, () => {
