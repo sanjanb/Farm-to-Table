@@ -90,7 +90,7 @@ Contributions are welcome! Please follow these steps:
 
 ## 🧑‍💻 Authors
 
-- **Your Name** – [GitHub Profile](https://github.com/sanjanb)
+- **Sanjan B M** – [GitHub Profile](https://github.com/sanjanb)
 
 ## 📄 License
 
