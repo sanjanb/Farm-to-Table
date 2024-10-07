@@ -26,7 +26,7 @@ Follow these steps to set up the Farmer Client on your local machine.
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/sanjanb/farmer-client.git
+   git clone https://github.com/sanjanb/Farm-to-Table.git
    cd farmer-client
    ```
 
