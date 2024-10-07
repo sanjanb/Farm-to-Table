@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# 🌾 Farm to Table - Farmer Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The *Farm to Table* application allows farmers to connect directly with consumers, enabling them to list products and manage their sales efficiently.
 
-## Available Scripts
+## 📖 Overview
 
-In the project directory, you can run:
+This repository contains the front-end code for the Farmer Client of the *Farm to Table* application, built with React. Farmers can register, log in, and manage their product listings through a user-friendly interface.
 
-### `npm start`
+## 🌟 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Farmer Registration**: Farmers can create an account and register their details.
+- **Farmer Login**: Registered farmers can log in to manage their products.
+- **Product Management**: Farmers can add, update, and delete their products.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Getting Started
 
-### `npm test`
+Follow these steps to set up the Farmer Client on your local machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **Prerequisites**
 
-### `npm run build`
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **Installing Dependencies**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone this repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/sanjanb/farmer-client.git
+   cd farmer-client
+   ```
 
-### `npm run eject`
+2. Install the dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **Environment Variables**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Create a `.env` file in the root directory of the project and add the following environment variables:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```plaintext
+REACT_APP_API_URL=http://localhost:5000/api
+```
 
-## Learn More
+- `REACT_APP_API_URL`: This is the base URL for your back-end API.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### **Running the Application**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To start the development server, run:
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The app will be available at `http://localhost:3000`.
 
-### Analyzing the Bundle Size
+## 📜 API Endpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The Farmer Client communicates with the following API endpoints:
 
-### Making a Progressive Web App
+### **Authentication**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- `POST /api/auth/register`: Register a new farmer.
+- `POST /api/auth/login`: Login a farmer.
 
-### Advanced Configuration
+### **Products**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- `POST /api/products`: Add a new product.
+- `GET /api/products`: Get all products for farmers.
+- `GET /api/products/:id`: Get a specific product by ID.
+- `PUT /api/products/:id`: Update a product.
+- `DELETE /api/products/:id`: Delete a product.
 
-### Deployment
+## 🛠 Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Front-end**: React, Axios, React Router
+- **Back-end**: Node.js, Express, MongoDB
 
-### `npm run build` fails to minify
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! Please follow these steps:
+
+1. Fork the project.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a pull request.
+
+## 🧑‍💻 Authors
+
+- **Your Name** – [GitHub Profile](https://github.com/sanjanb)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
