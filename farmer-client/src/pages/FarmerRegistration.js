@@ -25,8 +25,8 @@ const FarmerRegistration = () => {
         "http://localhost:5000/api/auth/register",
         formData
       );
-      console.log(response.data);
       alert("Registration successful!");
+      console.log(response.data); // You might want to redirect or clear the form here
     } catch (error) {
       console.error(error);
       alert("Registration failed!");
